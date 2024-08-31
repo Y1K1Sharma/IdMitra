@@ -1,10 +1,47 @@
+
+
 import cv2, text_utils, pytesseract, difflib
 from PIL import Image
 
 from skimage.transform import rotate
 from deskew import determine_skew
 import numpy
+# Load pre-trained face detection model
+face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
+def mask_faces(image):
+    # Convert to grayscale
+    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    
+    # Detect faces
+    faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))
+    
+    # Mask each face
+    for (x, y, w, h) in faces:
+        # Apply a black rectangle mask
+        image = cv2.rectangle(image, (x, y), (x + w, y + h), (0, 0, 0), -1)
+    
+    return image
+
+def mask_aadhaar_number(image):
+    # Convert image to numpy array if it's a PIL Image
+    if isinstance(image, Image.Image):
+        image = np.array(image)
+    
+    # Perform OCR to get text data
+    data = pytesseract.image_to_data(image, output_type=pytesseract.Output.DICT)
+    
+    n_boxes = len(data['level'])
+    
+    # Loop through the OCR detected text boxes
+    for i in range(n_boxes):
+        text = data['text'][i]
+        if len(text.replace(' ', '')) == 12 and text.isdigit():
+            (x, y, w, h) = (data['left'][i], data['top'][i], data['width'][i], data['height'][i])
+            # Draw a rectangle (black box) over the detected Aadhaar number
+            image = cv2.rectangle(image, (x, y), (x + w, y + h), (0, 0, 0), -1)
+    
+    return image
 def scan_image_for_people(image):
     
     image = numpy.array(image) # converts the image to a compatible format
