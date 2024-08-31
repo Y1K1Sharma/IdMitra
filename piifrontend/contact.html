@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+            background-color: #000;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            max-width: 1200px;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 30px;
+            color: #f39c12;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 50px;
+            color: #bdc3c7;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #1a1a1a;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+            font-size: 1.1em;
+        }
+
+        input[type="submit"] {
+            background-color: #f39c12;
+            color: #000;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #e67e22;
+            transform: translateY(-5px);
+        }
+
+        .contact-info {
+            margin-top: 50px;
+        }
+
+        .contact-info h2 {
+            color: #f39c12;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            font-size: 1.2em;
+            color: #bdc3c7;
+        }
+
+        .contact-info a {
+            color: #f39c12;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-info a:hover {
+            color: #e67e22;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>Have any questions or concerns? We're always ready to help!</p>
+
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+
+        <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <p>Email: <a href="mailto:IDमित्र@gmail.com">IDमित्र@gmail.com</a></p>
+            <p>Phone: 9876543210</p>
+            <p>Address: Bennett University,greater noida </p>
+        </div>
+    </div>
+
+</body>
+</html>

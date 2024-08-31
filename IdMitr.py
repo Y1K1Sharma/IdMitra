@@ -13,7 +13,7 @@ temp_dir = ".OCTOPII_TEMP/"
 
 
 def help_screen():
-    help = '''Usage: python octopii.py <file, local path or URL>
+    help = '''Usage: python IdMitr.py <file, local path or URL>
 Note: Only Unix-like filesystems, S3 and open directory URLs are supported.'''
     print(help)
 
