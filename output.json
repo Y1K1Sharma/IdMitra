@@ -1,0 +1,58 @@
+[
+    {
+        "file_path": "C:\\Users\\morya\\Desktop\\SIH\\aadhaar-ocr-main\\aadhaar-ocr-main\\aadhaar_front_example.png",
+        "pii_class": null,
+        "score": 2,
+        "country_of_origin": "India",
+        "faces": 0,
+        "identifiers": [
+            "0000 1111 2222"
+        ],
+        "emails": [],
+        "phone_numbers": [],
+        "addresses": []
+    },
+    {
+        "file_path": "C:\\Users\\morya\\Desktop\\SIH\\pancardtest.jpg",
+        "pii_class": "Permanent Account Number",
+        "score": 33,
+        "country_of_origin": "India",
+        "faces": 1,
+        "identifiers": [
+            "ANRPM2537J"
+        ],
+        "emails": [],
+        "phone_numbers": [],
+        "addresses": []
+    },
+    {
+        "file_path": "C:\\Users\\morya\\Desktop\\SIH\\drivingtest.jpg",
+        "pii_class": "California Driver's License",
+        "score": 34,
+        "country_of_origin": "United States",
+        "faces": 1,
+        "identifiers": [
+            "123456789101"
+        ],
+        "emails": [],
+        "phone_numbers": [
+            "1234567891"
+        ],
+        "addresses": []
+    },
+    {
+        "file_path": "C:\\Users\\morya\\Desktop\\SIH\\drivingtest.jpg",
+        "pii_class": "California Driver's License",
+        "score": 34,
+        "country_of_origin": "United States",
+        "faces": 1,
+        "identifiers": [
+            "123456789101"
+        ],
+        "emails": [],
+        "phone_numbers": [
+            "1234567891"
+        ],
+        "addresses": []
+    }
+]
