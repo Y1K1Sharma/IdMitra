@@ -87,39 +87,34 @@ def help_screen():
 Note: Only Unix-like filesystems, S3 and open directory URLs are supported.'''
     print(help)
 
-
 def search_pii(file_path):
     contains_faces = 0
+    intelligible = None
+
     if file_utils.is_image(file_path):
-        # Extract the filename from the full path
         filename = os.path.basename(file_path)
-        # Create the output filename
         output_filename = "masked_" + filename
-        # Use a valid path to save the masked image
         temp_output_file = tempfile.NamedTemporaryFile(delete=False, suffix='.jpg', dir=os.path.dirname(file_path))
         temp_output_filepath = temp_output_file.name
         
         with open(file_path, "rb") as source_file:
             masker = Masker(source_file)
             
-            # Mask and save the image to a temporary file
-            masker.mask_all(temp_output_file)
+            contains_faces = masker.mask_all(temp_output_file)
             temp_output_file.close()
             
-            # Move the temporary file to the final location
             output_filepath = os.path.join(os.path.dirname(file_path), output_filename)
             shutil.move(temp_output_filepath, output_filepath)
         
-        # Load the masked image for further processing
         image = cv2.imread(output_filepath)
-        contains_faces = image_utils.scan_image_for_people(image)
         text = pytesseract.image_to_string(image)
         
     elif file_utils.is_pdf(file_path):
         pdf_pages = convert_from_path(file_path, 400)
+        text = ""
         for page in pdf_pages:
-            contains_faces = image_utils.scan_image_for_people(page)
-            text = pytesseract.image_to_string(page)
+            contains_faces += image_utils.scan_image_for_people(page)
+            text += pytesseract.image_to_string(page)
 
     else:
         text = textract.process(file_path).decode()
@@ -129,17 +124,20 @@ def search_pii(file_path):
     emails = text_utils.email_pii(text, rules)
     phone_numbers = text_utils.phone_pii(text, rules)
 
-    keywords_scores = text_utils.keywords_classify_pii(rules, intelligible)
-    score = max(keywords_scores.values())
-    pii_class = list(keywords_scores.keys())[list(keywords_scores.values()).index(score)]
+    if intelligible is None:
+        intelligible = {}
 
-    country_of_origin = rules[pii_class]["region"]
+    keywords_scores = text_utils.keywords_classify_pii(rules, intelligible)
+    score = max(keywords_scores.values(), default=0)
+    pii_class = list(keywords_scores.keys())[list(keywords_scores.values()).index(score)] if keywords_scores else None
+
+    country_of_origin = rules.get(pii_class, {}).get("region", "Unknown")
     identifiers = text_utils.id_card_numbers_pii(text, rules)
 
     if score < 5:
         pii_class = None
 
-    if len(identifiers) != 0:
+    if identifiers:
         identifiers = identifiers[0]["result"]
 
     if temp_dir in file_path:
@@ -147,18 +145,19 @@ def search_pii(file_path):
         file_path = urllib.parse.unquote(file_path)
 
     result = {
-        "file_path" : file_path,
-        "pii_class" : pii_class,
-        "score" : score,
+        "file_path": file_path,
+        "pii_class": pii_class,
+        "score": score,
         "country_of_origin": country_of_origin,
-        "faces" : contains_faces,
-        "identifiers" : identifiers,
-        "emails" : emails,
-        "phone_numbers" : phone_numbers,
-        "addresses" : addresses
+        "faces": contains_faces,
+        "identifiers": identifiers,
+        "emails": emails,
+        "phone_numbers": phone_numbers,
+        "addresses": addresses
     }
 
     return result
+
 
 
 if __name__ in '__main__':

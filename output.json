@@ -319,5 +319,52 @@
         "addresses": [
             "Sarat"
         ]
+    },
+    {
+        "file_path": "C:\\Users\\yksha\\OneDrive\\Desktop\\Server-Seizers\\dummy-pii\\1.jpg",
+        "pii_class": null,
+        "score": 0,
+        "country_of_origin": null,
+        "faces": null,
+        "identifiers": [
+            "Aadhaarit",
+            "GRLGOVERN",
+            "oilbSimni",
+            "MENTIORIN"
+        ],
+        "emails": [],
+        "phone_numbers": [],
+        "addresses": []
+    },
+    {
+        "file_path": "C:\\Users\\yksha\\OneDrive\\Desktop\\Server-Seizers\\dummy-pii\\1.jpg",
+        "pii_class": null,
+        "score": 0,
+        "country_of_origin": null,
+        "faces": 0,
+        "identifiers": [
+            "Aadhaarit"
+        ],
+        "emails": [],
+        "phone_numbers": [],
+        "addresses": [
+            "Name"
+        ]
+    },
+    {
+        "file_path": "C:\\Users\\yksha\\OneDrive\\Desktop\\Server-Seizers\\dummy-pii\\1.jpg",
+        "pii_class": null,
+        "score": 0,
+        "country_of_origin": null,
+        "faces": null,
+        "identifiers": [
+            "MENTIORIN",
+            "oilbSimni",
+            "Aadhaarit",
+            "GRLGOVERN"
+        ],
+        "emails": [],
+        "phone_numbers": [],
+        "addresses": []
     }
 ]
