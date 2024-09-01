@@ -54,5 +54,270 @@
             "1234567891"
         ],
         "addresses": []
+    },
+    {
+        "file_path": "C:\\Users\\yksha\\OneDrive\\Desktop\\Server-Seizers\\dummy-pii\\1.jpg",
+        "pii_class": null,
+        "score": 0,
+        "country_of_origin": null,
+        "faces": 0,
+        "identifiers": [
+            "Aadhaarit",
+            "GREREGOVE",
+            "oilSimniS",
+            "RNMENTIOR"
+        ],
+        "emails": [],
+        "phone_numbers": [],
+        "addresses": [
+            "oilSimniSSOKS"
+        ]
+    },
+    {
+        "file_path": "C:\\Users\\yksha\\OneDrive\\Desktop\\Server-Seizers\\dummy-pii\\2.jpg",
+        "pii_class": null,
+        "score": 0,
+        "country_of_origin": null,
+        "faces": 0,
+        "identifiers": [],
+        "emails": [],
+        "phone_numbers": [],
+        "addresses": []
+    },
+    {
+        "file_path": "C:\\Users\\yksha\\OneDrive\\Desktop\\Server-Seizers\\dummy-pii\\dummy-aadhaar.png",
+        "pii_class": null,
+        "score": 0,
+        "country_of_origin": null,
+        "faces": 1,
+        "identifiers": [
+            "3977 8800 0234"
+        ],
+        "emails": [
+            "help@uidai.gov.in"
+        ],
+        "phone_numbers": [
+            "800 180 1947",
+            "800 190 1047"
+        ],
+        "addresses": [
+            "",
+            "Children"
+        ]
+    },
+    {
+        "file_path": "C:\\Users\\yksha\\OneDrive\\Desktop\\Server-Seizers\\dummy-pii\\asq.jpg",
+        "pii_class": null,
+        "score": 0,
+        "country_of_origin": null,
+        "faces": 0,
+        "identifiers": [
+            "Governmen"
+        ],
+        "emails": [],
+        "phone_numbers": [],
+        "addresses": []
+    },
+    {
+        "file_path": "C:\\Users\\yksha\\OneDrive\\Desktop\\Server-Seizers\\dummy-pii\\asq.jpg",
+        "pii_class": null,
+        "score": 0,
+        "country_of_origin": null,
+        "faces": 0,
+        "identifiers": [
+            "Governmen"
+        ],
+        "emails": [],
+        "phone_numbers": [],
+        "addresses": []
+    },
+    {
+        "file_path": "C:\\Users\\yksha\\OneDrive\\Desktop\\Server-Seizers\\dummy-pii\\asq.jpg",
+        "pii_class": null,
+        "score": 0,
+        "country_of_origin": null,
+        "faces": 0,
+        "identifiers": [
+            "Governmen"
+        ],
+        "emails": [],
+        "phone_numbers": [],
+        "addresses": []
+    },
+    {
+        "file_path": "C:\\Users\\yksha\\OneDrive\\Desktop\\Server-Seizers\\dummy-pii\\asq.jpg",
+        "pii_class": null,
+        "score": 0,
+        "country_of_origin": null,
+        "faces": null,
+        "identifiers": [
+            "Governmen"
+        ],
+        "emails": [],
+        "phone_numbers": [],
+        "addresses": []
+    },
+    {
+        "file_path": "C:\\Users\\yksha\\OneDrive\\Desktop\\Server-Seizers\\dummy-pii\\asq.jpg",
+        "pii_class": null,
+        "score": 0,
+        "country_of_origin": null,
+        "faces": 0,
+        "identifiers": [
+            "Governmen"
+        ],
+        "emails": [],
+        "phone_numbers": [],
+        "addresses": [
+            "India"
+        ]
+    },
+    {
+        "file_path": "C:\\Users\\yksha\\OneDrive\\Desktop\\Server-Seizers\\dummy-pii\\asq.jpg",
+        "pii_class": null,
+        "score": 0,
+        "country_of_origin": null,
+        "faces": 1,
+        "identifiers": [
+            "Governmen"
+        ],
+        "emails": [],
+        "phone_numbers": [],
+        "addresses": [
+            "India"
+        ]
+    },
+    {
+        "file_path": "C:\\Users\\yksha\\OneDrive\\Desktop\\Server-Seizers\\dummy-pii\\asq.jpg",
+        "pii_class": null,
+        "score": 0,
+        "country_of_origin": null,
+        "faces": 1,
+        "identifiers": [
+            "Governmen"
+        ],
+        "emails": [],
+        "phone_numbers": [],
+        "addresses": [
+            "India"
+        ]
+    },
+    {
+        "file_path": "C:\\Users\\yksha\\OneDrive\\Desktop\\Server-Seizers\\dummy-pii\\asq.jpg",
+        "pii_class": null,
+        "score": 0,
+        "country_of_origin": null,
+        "faces": 0,
+        "identifiers": [
+            "Governmen"
+        ],
+        "emails": [],
+        "phone_numbers": [],
+        "addresses": []
+    },
+    {
+        "file_path": "C:\\Users\\yksha\\OneDrive\\Desktop\\Server-Seizers\\dummy-pii\\asq.jpg",
+        "pii_class": null,
+        "score": 0,
+        "country_of_origin": null,
+        "faces": 1,
+        "identifiers": [
+            "Governmen"
+        ],
+        "emails": [],
+        "phone_numbers": [],
+        "addresses": [
+            "India"
+        ]
+    },
+    {
+        "file_path": "C:\\Users\\yksha\\OneDrive\\Desktop\\Server-Seizers\\dummy-pii\\asq.jpg",
+        "pii_class": null,
+        "score": 0,
+        "country_of_origin": null,
+        "faces": 1,
+        "identifiers": [
+            "Governmen"
+        ],
+        "emails": [],
+        "phone_numbers": [],
+        "addresses": [
+            "India"
+        ]
+    },
+    {
+        "file_path": "C:\\Users\\yksha\\OneDrive\\Desktop\\Server-Seizers\\dummy-pii\\asq.jpg",
+        "pii_class": null,
+        "score": 0,
+        "country_of_origin": null,
+        "faces": 0,
+        "identifiers": [
+            "Governmen"
+        ],
+        "emails": [],
+        "phone_numbers": [],
+        "addresses": [
+            "India"
+        ]
+    },
+    {
+        "file_path": "C:\\Users\\yksha\\OneDrive\\Desktop\\Server-Seizers\\dummy-pii\\asq.jpg",
+        "pii_class": null,
+        "score": 1,
+        "country_of_origin": "India",
+        "faces": 1,
+        "identifiers": [
+            "8012 0804 7080"
+        ],
+        "emails": [],
+        "phone_numbers": [],
+        "addresses": [
+            "India"
+        ]
+    },
+    {
+        "file_path": "C:\\Users\\yksha\\OneDrive\\Desktop\\Server-Seizers\\dummy-pii\\1.jpg",
+        "pii_class": "Irish Public Services Card",
+        "score": 6,
+        "country_of_origin": "Ireland",
+        "faces": 1,
+        "identifiers": [
+            "4444 5555 6666"
+        ],
+        "emails": [],
+        "phone_numbers": [],
+        "addresses": [
+            "Tar"
+        ]
+    },
+    {
+        "file_path": "C:\\Users\\yksha\\OneDrive\\Desktop\\Server-Seizers\\dummy-pii\\1.jpg",
+        "pii_class": "Aadhaar Card",
+        "score": 7,
+        "country_of_origin": "India",
+        "faces": 0,
+        "identifiers": [
+            "4444 5555 6666"
+        ],
+        "emails": [],
+        "phone_numbers": [],
+        "addresses": [
+            "Sarat"
+        ]
+    },
+    {
+        "file_path": "C:\\Users\\yksha\\OneDrive\\Desktop\\Server-Seizers\\dummy-pii\\1.jpg",
+        "pii_class": "Aadhaar Card",
+        "score": 7,
+        "country_of_origin": "India",
+        "faces": 0,
+        "identifiers": [
+            "4444 5555 6666"
+        ],
+        "emails": [],
+        "phone_numbers": [],
+        "addresses": [
+            "Sarat"
+        ]
     }
 ]
