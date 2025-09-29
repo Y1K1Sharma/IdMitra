@@ -8,7 +8,8 @@ Once you've installed the above, you're all set.
 
 ### Running
 
-To run IdMitr, type
+To run IdMitr, 
+type:
 
 ```
 python3 IdMitr.py <location to scan>
