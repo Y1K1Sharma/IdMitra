@@ -1,3 +1,4 @@
+#importing necessary libraries
 from pytesseract import Output
 import cv2
 import numpy as np
